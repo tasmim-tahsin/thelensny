@@ -83,10 +83,12 @@ export default function About() {
           <AnimatedSection>
             <div className="relative overflow-hidden" style={{ background: 'var(--bg3)', minHeight: '400px', border: '1px solid var(--border)' }}>
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4" style={{ background: 'linear-gradient(135deg, #0d0d0d 0%, #1a0a0a 100%)' }}>
-                <Camera size={60} strokeWidth={1} style={{ color: 'var(--red)', opacity: 0.4 }} />
+                {/* <Camera size={60} strokeWidth={1} style={{ color: 'var(--red)', opacity: 0.4 }} />
+
                 <div className="font-display font-black text-lg uppercase tracking-widest text-center px-6" style={{ color: 'var(--gray2)' }}>
                   Cinematographer<br />at work
-                </div>
+                </div> */}
+                <img src="/photographer.png" alt="Cinematographer at work" className="w-full h-auto object-cover" />
               </div>
               {/* Red badge */}
               <div className="absolute bottom-0 left-0 right-0 p-4" style={{ background: 'var(--red)' }}>
