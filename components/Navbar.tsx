@@ -26,7 +26,8 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      style={{ background: scrolled ? 'rgba(10,10,10,0.97)' : 'transparent', borderBottom: scrolled ? '1px solid var(--border)' : 'none', backdropFilter: scrolled ? 'blur(12px)' : 'none' }}>
+      // style={{ background: scrolled ? 'var(--bg2)' : 'transparent', borderBottom: scrolled ? '1px solid var(--border)' : 'none', backdropFilter: scrolled ? 'blur(12px)' : 'none' }}
+      style={{ background: 'var(--bg2)', borderBottom: '1px solid var(--border)', backdropFilter: 'blur(12px)' }}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
