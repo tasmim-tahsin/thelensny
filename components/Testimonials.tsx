@@ -39,10 +39,10 @@ export default function Testimonials() {
     <section id="testimonials" style={{ background: 'var(--bg)' }}>
       {/* Full-width banner */}
       <div className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))',
-          background: 'linear-gradient(135deg, #0a0a0a 0%, #1a0505 50%, #0a0a0a 100%)',
-        }} />
+        {/* BG gradient */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 60% at 70% 30%, rgba(227,27,35,0.07) 0%, transparent 60%)' }} />
+
+        {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="font-display font-black uppercase"
