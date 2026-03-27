@@ -24,7 +24,8 @@ export default function BlogSection() {
                 <article className="blog-card h-full flex flex-col">
                   {/* Image */}
                   <div className="overflow-hidden" style={{ height: 220 }}>
-                    <div className={`blog-img w-full h-full bg-gradient-to-br ${post.gradient}`} />
+                    {/* <div className={`blog-img w-full h-full bg-gradient-to-br ${post.gradient}`} /> */}
+                    <img src="/logo.webp" alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   {/* Content */}
                   <div className="p-5 flex flex-col flex-1">

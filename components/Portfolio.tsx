@@ -8,7 +8,7 @@ const projects = [
   { title: 'VOICES OF QUEENS', category: 'Documentary', client: 'NYC Cultural Affairs', span: 'row', bg: 'from-blue-950 to-slate-900', video:'/video1.webm' },
   { title: 'ELEVATE EVERYTHING', category: 'Advertisement', client: 'Nike New York', span: '', bg: 'from-red-950 to-neutral-900', video:'/video1.webm' },
   { title: 'EID ACROSS BOROUGHS', category: 'Cultural Event', client: 'Bangladesh Society NY', span: '', bg: 'from-violet-950 to-zinc-900', video:'/video1.webm' },
-  { title: 'SKYLINE SERIES', category: 'Corporate Film', client: 'Hudson Yards', span: '', bg: 'from-sky-950 to-slate-900', video:'/video1.webm' },
+  { title: 'SKYLINE SERIES', category: 'Corporate Film', client: 'Hudson Yards', span: '', bg: 'from-sky-950 to-slate-900', video:'/video2.webm' },
 ]
 
 export default function Portfolio() {
@@ -43,7 +43,7 @@ export default function Portfolio() {
     loop
     playsInline
     className="w-full h-full object-cover"
-    preload='none'
+    preload="none"
   />
 
   {/* overlay */}
@@ -71,6 +71,7 @@ export default function Portfolio() {
     loop
     playsInline
     className="w-full h-full object-cover"
+    preload="none"
   />
 
   {/* overlay */}
@@ -98,6 +99,7 @@ export default function Portfolio() {
     loop
     playsInline
     className="w-full h-full object-cover"
+    preload="none"
   />
 
   {/* overlay */}
@@ -126,6 +128,7 @@ export default function Portfolio() {
     loop
     playsInline
     className="w-full h-full object-cover"
+    preload="none"
   />
 
   {/* overlay */}
