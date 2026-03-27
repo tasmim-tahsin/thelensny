@@ -82,7 +82,7 @@ export default function About() {
           {/* Left: Photographer image placeholder */}
           <AnimatedSection>
             <div className="relative overflow-hidden" style={{ background: 'var(--bg3)', minHeight: '400px', border: '1px solid var(--border)' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4" style={{ background: 'linear-gradient(135deg, #0d0d0d 0%, #1a0a0a 100%)' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4" style={{ background: 'var(--bg3)' }}>
                 {/* <Camera size={60} strokeWidth={1} style={{ color: 'var(--red)', opacity: 0.4 }} />
 
                 <div className="font-display font-black text-lg uppercase tracking-widest text-center px-6" style={{ color: 'var(--gray2)' }}>
