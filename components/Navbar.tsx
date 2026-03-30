@@ -30,10 +30,20 @@ export default function Navbar() {
       style={{ background: 'var(--bg2)', borderBottom: '1px solid var(--border)', backdropFilter: 'blur(12px)' }}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
+       
+
         <Link href="/" className="flex items-center gap-2">
-        <CameraIcon size={20} style={{ color: 'var(--red)' }} />
-          <span className="hidden sm:block text-md font-display font-bold uppercase tracking-widest" style={{ color: 'var(--gray2)' }}>THE LENS</span>
-        </Link>
+  {theme === 'dark' ? (
+    <img src="/logo.webp" alt="The Lens" className="h-8 w-auto" />
+  ) : (
+    <>
+      <img src="/logo2.PNG" alt="The Lens" className="h-8 w-auto" />
+      <span className="text-md font-display font-bold uppercase tracking-widest text-[var(--gray2)]">
+        THE LENS
+      </span>
+    </>
+  )}
+</Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-7">
