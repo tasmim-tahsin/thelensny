@@ -10,20 +10,19 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  theme: 'dark',
+  theme: 'light',
   toggleTheme: () => {},
 })
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark')
-  const [mounted, setMounted] = useState(false)
+  const [theme, setTheme] = useState<Theme>('light')
 
   useEffect(() => {
     const stored = localStorage.getItem('lens-theme') as Theme | null
-    const initial = stored || 'dark'
+    const initial = stored || 'light'
+
     setTheme(initial)
     document.documentElement.setAttribute('data-theme', initial)
-    setMounted(true)
   }, [])
 
   const toggleTheme = () => {
@@ -32,8 +31,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.setAttribute('data-theme', next)
     localStorage.setItem('lens-theme', next)
   }
-
-  if (!mounted) return null
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

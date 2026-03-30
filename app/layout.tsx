@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script dangerouslySetInnerHTML={{ __html: `
-          (function(){try{var t=localStorage.getItem('lens-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+          (function(){try{var t=localStorage.getItem('lens-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
         ` }} />
       </head>
       <body>
