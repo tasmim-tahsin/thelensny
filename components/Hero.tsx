@@ -46,12 +46,12 @@ export default function Hero() {
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 60% at 70% 30%, rgba(227,27,35,0.07) 0%, transparent 60%)' }} />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-20 pt-32">
-        <div className="grid lg:grid-cols-2 gap-8 items-end">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-20 pt-28 md:pt-32">
+        <div className="grid md:grid-cols-2 gap-8 items-end justify-start">
           {/* LEFT: Big headline */}
           <div>
             {/* Top row: avatars + description */}
-            <div className="flex items-start gap-6 mb-8">
+            {/* <div className="flex items-start gap-6 mb-8">
               <div className="flex -space-x-3">
                 {['SC','JO','PA'].map((i, idx) => (
                   <div key={idx} className="w-10 h-10 rounded-full border-2 flex items-center justify-center font-display font-black text-xs"
@@ -69,7 +69,7 @@ export default function Hero() {
                   The Lens is a full-service creative media agency delivering bold visuals and powerful narratives. From commercials to documentaries, we bring your vision to life.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Giant headline */}
             <h1 className="font-display font-black uppercase leading-none mb-6"
@@ -90,6 +90,28 @@ export default function Hero() {
 
           {/* RIGHT: Socials + Stats */}
           <div className="flex flex-col items-end gap-8">
+            {/* Top row: avatars + description */}
+            <div className="flex flex-col items-start gap-6 mb-8">
+              <div className="flex -space-x-3">
+                {['SC','JO','PA'].map((i, idx) => (
+                  <div key={idx} className="w-10 h-10 rounded-full border-2 flex items-center justify-center font-display font-black text-xs"
+                    style={{ borderColor: 'var(--red)', background: `hsl(${idx * 40},40%,20%)`, color: '#fff', zIndex: 3 - idx }}>
+                    {i}
+                  </div>
+                ))}
+                <div className="w-10 h-10 rounded-full border-2 flex items-center justify-center"
+                  style={{ borderColor: 'var(--red)', background: 'var(--red)', color: '#fff', zIndex: 0 }}>
+                  <span className="font-display font-black text-xs">+</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm leading-snug max-w-xs" style={{ color: 'var(--gray)' }}>
+                  The Lens is a full-service creative media agency delivering bold visuals and powerful narratives. From commercials to documentaries, we bring your vision to life.
+                </p>
+              </div>
+            </div>
+
+
             {/* Social icons */}
             <div className="flex gap-3">
               {socials.map(({ Icon, href }, i) => (
@@ -106,7 +128,7 @@ export default function Hero() {
                 { value: 500, suffix: '+', label: 'Projects' },
                 { value: 200, suffix: '+', label: 'Clients' },
                 { value: 5, suffix: '+', label: 'Years' },
-                { value: 50, suffix: '+', label: 'Awards' },
+                { value: 10, suffix: '+', label: 'Awards' },
               ].map(s => (
                 <div key={s.label} className="p-4 text-center"
                   style={{ background: 'var(--bg3)', border: '1px solid var(--border2)' }}>
